@@ -80,6 +80,12 @@ h1, h2, h3, h4, h5, h6, figure {
   background: #ec66ec;
 }
 
+.mb-30 {
+  margin-bottom: 30px; }
+
+.mb-80 {
+  margin-bottom: 80px; }
+
 .welln-container {
   max-width: 1140px;
   position: relative;
@@ -378,7 +384,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(35, 35, 35, 0.5);
+  background: rgba(255, 243, 252, 0.5);
 }
 .welln-cover > .welln-container {
   position: relative;
@@ -512,7 +518,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: #FF5126;
+  color: #dc88b6;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -2069,8 +2075,8 @@ form label {
       margin: 0 3px;
       font-size: 13px; } }
   .portfolio-menu .btn.active {
-    color: #bca858;
-    border-bottom-color: #bca858; }
+    color: #dc88b6;
+    border-bottom-color: #dc88b6; }
 
 .welln-portfolio-single-item {
   position: relative;
@@ -2138,5 +2144,21 @@ form label {
     opacity: 1;
     visibility: visible;
     margin-left: -20px; }
+
+    .single-contact-information {
+  position: relative;
+  z-index: 1;
+  text-align: center; }
+  .single-contact-information i {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #dc88b6;
+    display: block; }
+  .single-contact-information h4 {
+    display: block;
+    margin-bottom: 15px; }
+  .single-contact-information p {
+    margin-bottom: 0; }
+
 
 /*# sourceMappingURL=style.css.map */
