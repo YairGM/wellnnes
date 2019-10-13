@@ -371,8 +371,62 @@
 	  	});
 
 	};
+	// *********************************
+    // :: 7.0 Portfolio Menu Active Code
+    // *********************************.
+    var portfolioMenuActiveCode = function() {
+    	$('.portfolio-menu button.btn').on('click', function () {
+        	$('.portfolio-menu button.btn').removeClass('active');
+        	$(this).addClass('active');
+    	})
+	}
 
-	
+    // *********************************
+    // :: 8.0 Magnific Popup Active Code
+    // *********************************
+    var popupActiveCode = function(){
+
+    	if ($.fn.magnificPopup) {
+        	$('.video-play-btn').magnificPopup({
+            	type: 'iframe'
+        	});
+        	$('.thumbnail-zoom').magnificPopup({
+            	type: 'image',
+            	gallery: {
+                	enabled: true
+            	}
+        	});
+    	}
+    }
+
+    // **************************
+    // ****************************
+    // :: 6.0 Portfolio Active Code
+    // ****************************
+    var  porfolioActiveCode= function(){
+    	if ($.fn.imagesLoaded) {
+        	$('.welln-boutique-area').imagesLoaded(function () {
+            	// filter items on button click
+            	$('.portfolio-menu').on('click', 'button', function () {
+                	var filterValue = $(this).attr('data-filter');
+                	$grid.isotope({
+                    	filter: filterValue
+                	});
+            	});
+            	// init Isotope
+            	var $grid = $('.welln-boutique-area').isotope({
+                	itemSelector: '.welln-boutique-item ',
+                	percentPosition: true,
+                	masonry: {
+                    	columnWidth: '.welln-boutique-item'
+                	}
+            	});
+        	});
+    	}
+    }
+
+
+   
 	$(function(){
 		fullHeight();
 		mobileMenuOutsideClick();
@@ -389,6 +443,9 @@
 		counterWayPoint();
 		accordion();
 		sliderMain();
+		porfolioActiveCode();
+		popupActiveCode();
+		portfolioMenuActiveCode();
 	});
 
 
@@ -402,49 +459,3 @@
   ga('create', 'UA-10146041-21', 'auto');
   ga('send', 'pageview');
 
-  // *********************************
-    // :: 7.0 Portfolio Menu Active Code
-    // *********************************
-    $('.portfolio-menu button.btn').on('click', function () {
-        $('.portfolio-menu button.btn').removeClass('active');
-        $(this).addClass('active');
-    })
-
-    // *********************************
-    // :: 8.0 Magnific Popup Active Code
-    // *********************************
-    if ($.fn.magnificPopup) {
-        $('.video-play-btn').magnificPopup({
-            type: 'iframe'
-        });
-        $('.thumbnail-zoom').magnificPopup({
-            type: 'image',
-            gallery: {
-                enabled: true
-            }
-        });
-    }
-
-    // **************************
-    // ****************************
-    // :: 6.0 Portfolio Active Code
-    // ****************************
-    if ($.fn.imagesLoaded) {
-        $('.welln-boutique-area').imagesLoaded(function () {
-            // filter items on button click
-            $('.portfolio-menu').on('click', 'button', function () {
-                var filterValue = $(this).attr('data-filter');
-                $grid.isotope({
-                    filter: filterValue
-                });
-            });
-            // init Isotope
-            var $grid = $('.welln-boutique-area').isotope({
-                itemSelector: '.welln-boutique-item',
-                percentPosition: true,
-                masonry: {
-                    columnWidth: '.welln-portfolio-item'
-                }
-            });
-        });
-    }

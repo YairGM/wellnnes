@@ -372,7 +372,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
 }
 .welln-cover a {
-  color: #FF5126;
+  color: #ffffff;
 }
 .welln-cover a:hover {
   color: white;
@@ -428,7 +428,7 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 .welln-cover.welln-cover-xs {
-  height: 500px;
+  height: 450px;
 }
 @media screen and (max-width: 768px) {
   .welln-cover.welln-cover-xs {
@@ -911,64 +911,63 @@ form label {
   width: 100%;
 }
 
-#welln-footer .welln-footer-links {
-  padding: 0;
-  margin: 0 0 20px 0;
-  float: left;
-  width: 100%;
-}
-#welln-footer .welln-footer-links li {
-  padding: 0;
-  margin: 0 0 15px 0;
-  list-style: none;
-  line-height: 1;
-}
-#welln-footer .welln-footer-links li a {
-  text-decoration: none;
-}
-#welln-footer .welln-footer-links li a:hover {
-  text-decoration: underline;
-}
-#welln-footer .welln-widget {
-  margin-bottom: 30px;
-}
-#welln-footer .welln-widget h3 {
-  margin-bottom: 15px;
-  font-weight: bold;
-  font-size: 15px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-#welln-footer .welln-widget .welln-quick-contact {
-  padding: 0;
-  margin: 0;
-}
-#welln-footer .welln-widget .welln-quick-contact li {
-  padding: 0;
-  margin: 0 0 10px 0;
-  list-style: none;
-}
-#welln-footer .welln-widget .welln-quick-contact li i {
-  width: 30px;
-  float: left;
-  font-size: 18px;
+/* :: 9.0 Footer CSS */
+.footer-area {
   position: relative;
-  margin-top: 4px;
-  display: -moz-inline-stack;
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
-}
-@media screen and (max-width: 768px) {
-  #welln-footer .copyright .pull-left,
-  #welln-footer .copyright .pull-right {
-    float: none !important;
-    text-align: center;
-  }
-}
-#welln-footer .copyright .block {
-  display: block;
-}
+  z-index: 1; }
+
+.single-footer-widget {
+  position: relative;
+  z-index: 1; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .single-footer-widget p {
+      font-size: 14px; } }
+  .single-footer-widget .widget-title {
+    font-size: 22px;
+    color: #252525;
+    margin-bottom: 30px;
+    display: block;
+    text-transform: capitalize; }
+  .single-footer-widget .open-time p {
+    margin-bottom: 8px; }
+    .single-footer-widget .open-time p:last-child {
+      margin-bottom: 0; }
+  .single-footer-widget .social-info {
+    position: relative;
+    z-index: 1;
+    margin-top: 30px; }
+    .single-footer-widget .social-info a {
+      display: inline-block;
+      font-size: 18px;
+      color: #ffffff;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+      text-align: center;
+      line-height: 40px; }
+
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .single-footer-widget .social-info a {
+          margin-right: 5px; } }
+          
+      .single-footer-widget .social-info a.facebook {
+        background-color: #4b62b3; }
+      .single-footer-widget .social-info a.twitter {
+        background-color: #03baeb; }
+      .single-footer-widget .social-info a.youtube {
+        background-color: #cb242e; }
+      .single-footer-widget .social-info a.instagram {
+        background-color: #057ad7; }
+      .single-footer-widget .social-info a:focus, .single-footer-widget .social-info a:hover {
+        background-color: #dc88b6; }
+  .single-footer-widget .contact-address p {
+    margin-bottom: 8px; }
+    .single-footer-widget .contact-address p:last-child {
+      margin-bottom: 0; }
+  .single-footer-widget .footer-logo {
+    display: block;
+    margin-bottom: 30px; }
 
 #welln-offcanvas {
   position: absolute;
@@ -2053,6 +2052,18 @@ form label {
   font-size: 22px;
 }
 
+.welln-tratamiento-single-item {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 3px; }
+  .welln-tratamiento-single-item img {
+    width: 100%;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+    border-radius: 3px; }
+
 /* :: 14.0 Portfolio CSS */
 
 .welln-portfolio {
@@ -2107,7 +2118,7 @@ form label {
     .welln-portfolio-single-item .overlay-content .overlay-text h4 {
       color: #bca858; }
       @media only screen and (max-width: 767px) {
-        .akame-portfolio-single-item .overlay-content .overlay-text h4 {
+        .welln-portfolio-single-item .overlay-content .overlay-text h4 {
           font-size: 20px; } }
     .welln-portfolio-single-item .overlay-content .overlay-text p {
       color: #ffffff;
