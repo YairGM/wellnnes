@@ -56,7 +56,7 @@
 
 	var navigation = function() {
 
-		$('body').on('click', '#welln-offcanvas ul a:not([class="external"]), .main-nav a:not([class="external"])', function(event){
+		$('body').on('click', '#welln-offcanvas ul a:not([class="external"]), .main-nav a:not([class="external"]), #welln-hero a:not([class="external"])', function(event){
 			var section = $(this).data('nav-section');
 				if ( $('[data-section="' + section + '"]').length ) {
 			    	$('html, body').animate({
@@ -425,6 +425,15 @@
     	}
     }
 
+    var sectionBtn = function(){
+    	$(".btn").on("click", function() {
+    //hide all sections
+    $(".content-section").hide();
+    //show the section depending on which button was clicked
+    $("#" + $(this).attr("data-section")).show();
+  });
+    }
+
 
    
 	$(function(){
@@ -446,6 +455,7 @@
 		porfolioActiveCode();
 		popupActiveCode();
 		portfolioMenuActiveCode();
+		sectionBtn();
 	});
 
 
