@@ -2321,7 +2321,7 @@ form label {
   position: absolute;
   left: 20px;
   top: 10px;
-  color: #f14634;
+  color: #dc88b6;
   font-weight: 400;
   line-height: 24px;
   font-style: italic;
@@ -2331,7 +2331,7 @@ form label {
 
 .booking-form .submit-btn {
   color: #fff;
-  background-color: #f14634;
+  background-color: #dc88b6;
   font-weight: 700;
   height: 80px;
   font-size: 18px;
